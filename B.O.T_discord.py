@@ -715,4 +715,4 @@ async def on_guild_remove(server):
 
 
 access_token = os.environ["BOT_TOKEN"]
-client.run(acess_token)
+client.run(access_token)
