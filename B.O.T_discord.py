@@ -257,7 +257,7 @@ async def on_message(message):
     if message.content.startswith('!대출 상환') or message.content.startswith('!대출상환'):
         embed = discord.Embed(title="대출 상환되셨습니다.", description="잠시만 기다리십시오 상환중입니다.", color=0x00ff00)
         embed.set_footer(text="돈을 다 값으셨다면 톡출이 가능합니다.")
-    await message.channel.send(embed=embed)
+        await message.channel.send(embed=embed)
 
 
     if message.content.startswith("!날씨"):
