@@ -1,5 +1,5 @@
 discord==1.0.1
 bs4==0.0.1
 selenium==3.141.0
-requeste==2.23.0
+requests==2.23.0
 urllib31.25.9
