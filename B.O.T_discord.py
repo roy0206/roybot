@@ -55,8 +55,13 @@ async def on_message(message):
    '!로이봇'(듀토리얼) 추가
    
 1.1.0버전:'!날씨','!검색','!이모티콘','!복권',
-   '!가위,!바위,!보','주사위 추가
-   기존 명령어 몇몇 수정&패치노트 추가""", color=0x00ff00)
+   '!가위,!바위,!보','!주사위','!이미지' 추가
+   기존 명령어 몇몇 수정&패치노트 추가
+   
+1.1.1버전:'!번역' 기능 추가,
+   도박 확률이 10~90까지 있음
+
+1.2.0버전:로이봇 무한가동 가능""", color=0x00ff00)
         await message.channel.send(embed=embed)
 
     if message.content.startswith("!업뎃"):
@@ -114,16 +119,16 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if message.content.startswith("!로이봇"):
-        embed = discord.Embed(title="로이봇 듀토리얼", description="로이봇의 듀토리얼입니다", color=0x00ff00)
+        embed = discord.Embed(title="로이봇 튜토리얼", description="로이봇의 튜토리얼입니다", color=0x00ff00)
         embed.add_field(name="1. '!핼로'이라고 치면 안녕하세요로 대답", value=".", inline=True)
         embed.add_field(name="2. '!로이스톱모션' 이라고 치면 로이스톱모션 소개", value=".", inline=True)
         embed.add_field(name="3. '!축튜버' 라고 치면 축튜버 소개", value=".", inline=True)
-        embed.add_field(name="4. '!계산기' (더하기or빼기or곱하기or나누기) 숫자 숫자 입력하면 계산해줌", value=".", inline=True)
+        embed.add_field(name="4. '!계산기' (+or-or*or/) 숫자 숫자 입력하면 계산해줌", value=".", inline=True)
         embed.add_field(name="5. '!시간' 이러고 치면 현제시간 알려줌", value=".", inline=True)
         embed.add_field(name="6. '!톡앤티' 라고 치면 톡엔티 소개", value=".", inline=True)
         embed.add_field(name="7. '!도박(확률:10~70)' 이라고 치면 50%확률 도박 시행", value=".", inline=True)
         embed.add_field(name="8. '!이모티콘' 이라 치면 랜덤 이모티콘 보냄", value=".", inline=True)
-        embed.add_field(name="9. '!검색 ** '으로 원하는 것을 유튜브에서 검색", value=".", inline=True)
+        embed.add_field(name="9. '!검색 ** '으로 원하는 것을 유튜브에서 검색(현제 불가)", value=".", inline=True)
         embed.add_field(name="10. '!날씨 (도시이름)'으로 해당 도시의 이름 알려줌", value=".", inline=True)
         embed.add_field(name="11. '!복권'으로 1~46까지의 수 중 7개 랜덤 수 뽑기", value=".", inline=True)
         embed.add_field(name="12. '!대출' 1000~50000(톡) 으로 대출 가능(자세한건 은행 공지)", value=".", inline=True)
@@ -135,6 +140,7 @@ async def on_message(message):
         embed.add_field(name="18. '!끝'으로 끝말잇기를 끝냄", value=".", inline=True)
         embed.add_field(name="19. '!톡사공 주식목록' 으로 주식 목록 확인 가능", value=".", inline=True)
         embed.add_field(name="20. '!주식(주식번호)' 으로 주식 구매 예약/구매 완료되면 자료실에 없대이트", value=".", inline=True)
+        embed.add_field(name="21. '!번역 (원하는 단어)' 로 한영 번역 가능", value=".", inline=True)
         embed.add_field(name="기타:톡앤티 멤버 명령어", value=".", inline=True)
 
         await message.channel.send(embed=embed)
@@ -142,6 +148,12 @@ async def on_message(message):
     elif message.content == "!시간":
         now = datetime.datetime.now()
         await message.channel.send((str(now.year) + "년" + str(now.month) + "월" + str(now.day) + "일" + str(now.hour) + "시" + str(now.minute) + "분 입니다"))
+
+    elif message.content == "!도박90":
+        await message.channel.send(random.choice(["무난하게 성공!", "성공^_^", "대단해", "럭키 가이", "예상한 결과지 뭐", "축하한다 친구여", "역시나 성공!", "평균입니다!", "이런 개같은 쓰래기 자식 그걸 어떻게 실패하냐 더러운 짜슥"]))
+
+    elif message.content == "!도박80":
+        await message.channel.send(random.choice(["무난하게 성공!", "성공^_^", "대단해", "럭키 가이", "예상한 결과지 뭐", "축하한다 친구여", "역시나 성공!", "그걸 실패하냐 에휴", "더럽go 추악han"]))
 
     elif message.content == "!도박70":
         await message.channel.send(random.choice(["올~~성공이얏!!","축하해!!","굿","이걸 실패하면 호구지!","대단해!","ㄷㄷ 성공","내가 졌어 축하한다 친구여","그걸 실패하냐 더러운 자식","개못하누","실패야.. 무튼 그런거임 수고 ㅂ",]))
@@ -602,11 +614,6 @@ async def on_message(message):
         client_secret = "kiI0nYPW0z"
 
         url = "https://openapi.naver.com/v1/papago/n2mt"
-        print(len(learn))
-        vrsize = len(learn)  # 배열크기
-        vrsize = int(vrsize)
-        for i in range(1, vrsize):  # 띄어쓰기 한 텍스트들 인식함
-            text = text + " " + learn[i]
         encText = urllib.parse.quote(text)
         data = "source=ko&target=en&text=" + encText
 
@@ -709,7 +716,6 @@ async def on_guild_join(server):
 @client.event
 async def on_guild_remove(server):
     print(server,"서버에서 연결이 끊겼습니다..")
-
 
 
 
