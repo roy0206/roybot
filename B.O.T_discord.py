@@ -596,8 +596,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if message.content.startswith('!번역'):
-        learn = message.content.split(" ")
-        command, text = message.content.split(' ')
+        command, text = message.content.split(maxsplit=1)
 
         client_id = "UZBA4BAXuxx4hWLwQMKD"
         client_secret = "kiI0nYPW0z"
