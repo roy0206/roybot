@@ -61,7 +61,7 @@ async def on_message(message):
 1.1.1버전:'!번역' 기능 추가,
    도박 확률이 10~90까지 있음
 
-1.2.0버전:로이봇 무한가동 가능""", color=0x00ff00)
+1.2.0버전:로이봇 무한가동 가능""", color=0xff0000)
         await message.channel.send(embed=embed)
 
     if message.content.startswith("!업뎃"):
@@ -119,7 +119,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if message.content.startswith("!로이봇"):
-        embed = discord.Embed(title="로이봇 튜토리얼", description="로이봇의 튜토리얼입니다", color=0x00ff00)
+        embed = discord.Embed(title="로이봇 튜토리얼", description="로이봇의 튜토리얼입니다", color=0xff0000)
         embed.add_field(name="1. '!핼로'이라고 치면 안녕하세요로 대답", value=".", inline=True)
         embed.add_field(name="2. '!로이스톱모션' 이라고 치면 로이스톱모션 소개", value=".", inline=True)
         embed.add_field(name="3. '!축튜버' 라고 치면 축튜버 소개", value=".", inline=True)
@@ -176,6 +176,20 @@ async def on_message(message):
     elif message.content == "!도박10":
         await message.channel.send(random.choice(["1/10을 돌파하다니 ㄷㄷ 미친 놈이구만","그걸 될거라 생각한 너의 잘못이다","꽝!","망했네여 ㅜㅜ","빠가 자식","에휴","어림도 없지","쯧쯧","잘 해봐..","그것도 못하는 바보같은이",]))
 
+    elif message.content == "!강도잡기":
+        await message.channel.send(random.choice(["강도를 잡었다!! 벌금을 물어서 100톡을 획득했다", "강도를 놓첬다!!", "강도가 이미 돈을 훔치고 가버렸다.. -300톡", "강도가 사람을 해쳤다!! 수술비400톡"]))
+        
+    elif message.content == "!강도잡기 파출소":
+        await message.channel.send(random.choice(["강도를 잡었다!! 벌금을 물어서 200톡을 획득했다", "강도를 놓첬다!!", "강도가 이미 돈을 훔치고 가버렸다.. -200톡", "강도가 사람을 해쳤다!! 수술비 200톡"]))
+
+    elif message.content == "!강도잡기 경찰서":
+        await message.channel.send(random.choice(["강도를 잡었다!! 벌금을 물어서 500톡을 획득했다", "강도를 잡었다!! 벌금을 물어서 500톡을 획득했다", "강도를 놓첬다!!", "강도가 이미 돈을 훔치고 가버렸다.. -2000톡", "강도가 사람을 해쳤다!! 수술비 100톡"]))
+
+    if message.content.startswith("!천둥이벤트"):
+        await message.channel.send(random.choice(["천둥을 맞을뻔했다!", "천둥이 집의 지붕을 파괴했다! 수리를 안하면 홍수가 나서 집이 파괴된다(수리비2000톡)", "정전이 일어났다. 정전을 틈타 강도가 처들어 와 1000톡을 훔쳤다", "길가다가 천둥을 맞았다! 수술비 500톡", "천둥소리를 자장가 삼아 자고 있다."]))
+    
+    if message.content.startswith("!지진이벤트"):
+        await message.channel.send(random.choice(["지진에 너무 놀랐다", "집의 벽이 파손되었다! 수리비:가격의30%", "정전이 일어났다. 정전을 틈타 강도가 처들어 와 1000톡을 훔쳤다", "길가다가 천둥을 맞았다! 수술비 500톡", "천둥소리를 자장가 삼아 자고 있다."]))
 
     if message.content.startswith("!계산기"):
         global calcResult
