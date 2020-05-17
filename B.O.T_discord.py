@@ -116,16 +116,6 @@ async def on_message(message):
             await message.channel.send(embed=embed)
 
 
-        if message.content.startswith("!톡사공 주식목록"):
-            embed = discord.Embed(title="주식 목록", description="주식 구매를 원하시면 !주식 (주식번호)를 처주시기 바랍니다.", color=0x00ff00)
-            embed.add_field(name="1톡사공 도로공사", value="5000t(10개)", inline=True)
-            embed.add_field(name="2톡앤티 스피킹", value="5000t(30개)", inline=True)
-            embed.add_field(name="3톡앤티 리딩", value="1800t(30개)", inline=True)
-            embed.add_field(name="4톡앤티 봇 전자", value="13000t(10개)", inline=True)
-            embed.add_field(name="5톡앤티 과학연구소", value="28000t(5개)", inline=True)
-            await message.channel.send(embed=embed)
-
-
     messages = [f'{len(client.guilds)}개의 서버 | {len(client.users)}명의 유저', "이 메세지는 10초마다 바뀝니다."]
     while True:
        await client.change_presence(status=discord.Status.online, activity=discord.Game(name=messages[0]))
@@ -141,7 +131,8 @@ async def on_guild_join(server):
 async def on_guild_remove(server):
     print(server,"서버에서 연결이 끊겼습니다..")
 
-client.run("NjkyNjczNzIwNTAxNjY1ODIy.Xrq0mA.QGE7l9m84ZN7r4Vm5g16Mr1Y9Us")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
 
 
 
