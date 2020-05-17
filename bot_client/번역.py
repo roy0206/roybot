@@ -19,19 +19,13 @@ async def on_message(message):
 
 
     if message.content.startswith('!번역'):
-        learn = message.content.split(" ")
-        Text = ""
+        command, text = message.content.split(maxsplit=1)
 
-        client_id = ""
-        client_secret = ""
+        client_id = "UZBA4BAXuxx4hWLwQMKD"
+        client_secret = "kiI0nYPW0z"
 
         url = "https://openapi.naver.com/v1/papago/n2mt"
-        print(len(learn))
-        vrsize = len(learn)  # 배열크기
-        vrsize = int(vrsize)
-        for i in range(1, vrsize):  # 띄어쓰기 한 텍스트들 인식함
-            Text = Text + " " + learn[i]
-        encText = urllib.parse.quote(Text)
+        encText = urllib.parse.quote(text)
         data = "source=ko&target=en&text=" + encText
 
         request = urllib.request.Request(url)
