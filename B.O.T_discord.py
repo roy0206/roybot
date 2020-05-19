@@ -91,6 +91,10 @@ async def on_message(message):
 
 
     if not ok:
+        
+        if message.author.bot:
+            return None
+        
         if message.content.startswith("!핼로"):
             embed = discord.Embed(title="안녕하세요", description="안녕하세요 전 고문 로이봇 입니다", color=0x00ff00)
             embed.set_footer(text="만나서 반가워요 ㅎㅎ")
