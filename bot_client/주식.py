@@ -24,6 +24,8 @@ async def on_message(message):
         embed.add_field(name="3톡앤티 리딩", value="1800t(30개)", inline=True)
         embed.add_field(name="4톡앤티 봇 전자", value="13000t(10개)", inline=True)
         embed.add_field(name="5톡앤티 과학연구소", value="28000t(5개)", inline=True)
+        embed.add_field(name="6왕립방송", value="5000t(10개)", inline=True)
+        embed.add_field(name="7TPBS", value="5000t(10개)", inline=True)
         await message.channel.send(embed=embed)
 
 
@@ -46,7 +48,14 @@ async def on_message(message):
     if message.content.startswith("!주식5"):
         embed = discord.Embed(title="톡앤티 과학연구소 주식 구매가 예약되셨습니다.", description="주식 구매 가능 여부를 확인하고 주식 구매 완료시 구매 완료라고 보내집니다", color=0x00ff00)
         await message.channel.send(embed=embed)
-
+        
+    if message.content.startswith("!주식6"):
+        embed = discord.Embed(title="왕립방송 주식 구매가 완료되었습니다.", description="주식 구매 가능 여부를 확인하고 주식 구매 완료시 구매 완료라고 보내집니다", color=0x00ff00)
+        await message.channel.send(embed=embed)
+        
+    if message.content.startswith("!주식7"):
+        embed = discord.Embed(title="TPBS 주식 구매가 완료되었습니다.", description="주식 구매 가능 여부를 확인하고 주식 구매 완료시 구매 완료라고 보내집니다", color=0x00ff00)
+        await message.channel.send(embed=embed)
 
     
 def register(g_content_fun, g_startswith_fun):

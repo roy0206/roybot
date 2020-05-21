@@ -41,7 +41,9 @@ async def on_message(message):
 
 1.3.1버전:삭제기능 추가
 
-1.3.2버전:봇이 명령하면 무시 기능 추가""", color=0x00ff00)
+1.3.2버전:봇이 명령하면 무시 기능 추가
+
+1.3.3버전:주식 2종묵 추가, 태풍,지진강도 추가.""", color=0x00ff00)
         await message.channel.send(embed=embed)
 
 
