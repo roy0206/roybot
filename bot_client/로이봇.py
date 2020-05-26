@@ -40,7 +40,8 @@ async def on_message(message):
         embed.add_field(name="19. '!톡사공 주식목록' 으로 주식 목록 확인 가능", value=".", inline=True)
         embed.add_field(name="20. '!주식(주식번호)' 으로 주식 구매 예약/구매 완료되면 자료실에 없대이트", value=".", inline=True)
         embed.add_field(name="21. '!번역 (원하는 단어)' 로 한영 번역 가능", value=".", inline=True)
-        embed.add_field(name="21. '!삭제 (숫자)' 로 메세지 삭제 가능", value=".", inline=True)
+        embed.add_field(name="22. '!삭제 (숫자)' 로 메세지 삭제 가능", value=".", inline=True)
+        embed.add_field(name="23. '!내정보' 로 내 정보와 프사 확인 가능", value=".", inline=True)
         await message.channel.send(embed=embed)
 
 
