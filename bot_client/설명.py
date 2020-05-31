@@ -22,6 +22,7 @@ async def on_message(message):
         3.번역
         4.내정보""", color=0x00f3ff)
         embed.set_image(url="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSIoC36iqWHZrhc5Hdi1k92IQoOTNzpgn65PCuEmmpebdwmfulR&usqp=CAU")
+        embed.set_footer(text="!설명 (설명종류)로 해당 설명 내용 확인 가능")
         await message.channel.send(embed=embed)
 
     if message.content == "!설명 계산기":
@@ -32,7 +33,6 @@ async def on_message(message):
         4.분수,소수 계산 됩니다.
         5.혼합계산 됩니다.
         6.음수계산 됩니다.""", color=0x00f3ff)
-        embed.set_footer(text="!설명 (설명종류)로 해당 설명 내용 확인 가능")
         await message.channel.send(embed=embed)
 
     if message.content == "!설명 날씨":
