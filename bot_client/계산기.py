@@ -15,31 +15,17 @@ import os
 
 async def on_message(message):
 
-    if message.content.startswith("!계산기"):
+    if message.content.startswith("="):
         global calcResult
-        command, operator, number1, number2 = message.content.split(' ')
-        if operator == "+":
-            calcResult = int(number1) + int(number2)
-            await message.channel.send("값 : " + str(calcResult))
-
-        if operator == "-":
-            calcResult = int(number1) - int(number2)
-            await message.channel.send("값 : " + str(calcResult))
-
-        if operator == "*":
-            calcResult = int(number1) * int(number2)
-            await message.channel.send("값 : " + str(calcResult))
-
-        if operator == "/":
-            calcResult = int(number1) / int(number2)
-            await message.channel.send("값 : " + str(calcResult))
+        command, question = message.content.split(maxsplit=1)
+        await message.channel.send("값 : " + str(eval(question)))
 
 
 def register(g_content_fun, g_startswith_fun):
     print('register : ', __name__)
 
     content_key = []
-    startswith_key = ["!계산기"]
+    startswith_key = ["="]
 
     if len(content_key):
         g_content_fun[__name__] = {'keys':content_key, 'func':on_message}

@@ -11,6 +11,7 @@ import os
 import sys
 import json
 import asyncio
+import os
 
 
 
@@ -45,7 +46,10 @@ async def on_message(message):
 
 1.3.3버전:주식 2종묵 추가, 태풍,지진강도 추가.
 
-1.3.4버전:내정보 추가.""", color=0x00ff00)
+1.3.4버전:내정보 추가.
+
+1.4.0버전:도박 명령어 수정 & 계산기 기능 개편
+설명 기능 추가,삭제 버그 픽스""", color=0x00ff00)
         await message.channel.send(embed=embed)
 
 
