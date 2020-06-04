@@ -14,7 +14,6 @@ import asyncio
 import os
 
 async def on_message(message):
-
     if message.content == "!설명":
         embed = discord.Embed(title="설명서입니다.", description="""설명종류"
         1.계산기
@@ -65,7 +64,7 @@ def register(g_content_fun, g_startswith_fun):
     print('register : ', __name__)
 
     content_key = ["!설명", "!설명 날씨"]
-    startswith_key = [""]
+    startswith_key = []
 
     if len(content_key):
         g_content_fun[__name__] = {'keys':content_key, 'func':on_message}
