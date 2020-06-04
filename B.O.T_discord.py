@@ -3,6 +3,11 @@ import datetime
 import random
 import urllib
 import requests
+import discord
+import datetime
+import random
+import urllib
+import requests
 import bs4
 from selenium import webdriver
 import random
@@ -44,26 +49,23 @@ async def on_ready():
     print(client.user.id)
     print("GOGO")
     print(client.user.name)
-    # print(client.get_all_members())
-    # print(client.get_all_channels())
-    # print(client.guilds)
-    # print(client.get_guild(689759070613405697))
-    game = discord.Game("로이스톱모션 구독")
-
-
-
+    messages = ["코드 수정", "명령어 실행"]
+    while True:
+       await client.change_presence(status=discord.Status.online, activity=discord.Game(name=messages[0]))
+       messages.append(messages.pop(0))
+       await asyncio.sleep(10)
     await client.change_presence(status=discord.Status.online, activity=game)
 
 
 
-@client.event
-async def on_member_join(member):
-    role= ""
-    for i in member.server.roles:
-        if i.name == "평민":
-            role = i
-            break
-    await client.add_roles(member, role)
+# @client.event
+# async def on_member_join(member):
+#     role= ""
+#     for i in member.server.roles:
+#         if i.name == "평민":
+#             role = i
+#             break
+#     await client.add_roles(member, role)
 
 
 
@@ -91,10 +93,10 @@ async def on_message(message):
 
 
     if not ok:
-        
-        if message.author.bot:
-            return None
-        
+
+        # if message.author.bot:
+            # return None
+
         if message.content.startswith("!핼로"):
             embed = discord.Embed(title="안녕하세요", description="안녕하세요 전 고문 로이봇 입니다", color=0x00ff00)
             embed.set_footer(text="만나서 반가워요 ㅎㅎ")
@@ -120,20 +122,20 @@ async def on_message(message):
             await message.channel.send(embed=embed)
 
 
-    messages = [f'{len(client.guilds)}개의 서버 | {len(client.users)}명의 유저', "이 메세지는 10초마다 바뀝니다."]
-    while True:
-       await client.change_presence(status=discord.Status.online, activity=discord.Game(name=messages[0]))
-       messages.append(messages.pop(0))
-       await asyncio.sleep(10)
+
+@client.event
+async def on_member_join(member):
+    fmt = '{1.name} 에 오신것을 환영합니다., {0.mention} 님'
+    channel = member.guild.get_channel("channel_id_here")
+    await channel.send(fmt.format(member, member.server))
 
 
 @client.event
-async def on_guild_join(server):
-    print(server,"서버에 접속했습니다!")
+async def on_member_remove(member):
+    fmt = '{0.mention} 님이 서버에서 나가셨습니다.'
+    channel = member.guild.get_channel("channel_id_here")
+    await channel.send(fmt.format(member, member.server))
 
-@client.event
-async def on_guild_remove(server):
-    print(server,"서버에서 연결이 끊겼습니다..")
 
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
