@@ -46,6 +46,9 @@ async def on_message(message):
     if message.content.startswith("!go"):
         await message.channel.send("오늘 톡엔티 오는 사람?")
 
+    if message.content.startswith("왕 죄수 인정?"):
+        await message.channel.send("왕 죄수 인정?")
+
 
     
 def register(g_content_fun, g_startswith_fun):
@@ -54,7 +57,7 @@ def register(g_content_fun, g_startswith_fun):
     # message.content == "key" 로 비교할 key 등록
     content_key = []
     # message.content.startswith("key") 로 비교할 key 등록
-    startswith_key = ["!업뎃", "!화사멍청이", "!강희수", "!끝", "!원기별명1", "톡출", "!화사본명", "!go"]
+    startswith_key = ["!업뎃", "!화사멍청이", "!강희수", "!끝", "!원기별명1", "톡출", "!화사본명", "!go", "왕 죄수 인정?"]
 
 
     # key 에 대응하는 함수 등록
