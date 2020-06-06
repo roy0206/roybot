@@ -27,8 +27,9 @@ async def on_message(message):
         if den > 0:
             try:
                 client.get_all_channels()
-                async for message in message.channel.history(limit=den):
-                    await message.delete()
+                # async for message in message.channel.history(limit=den):
+                #     await message.delete()
+                message.channel.purge(limit=den)
 
                 # async for m in client.logs_from(message.channel, limit=den + 1):
                 #     await client.delete_message(m)
@@ -40,9 +41,9 @@ async def on_message(message):
                 await message.channel.send('봇이 권한을 가지고 있지 않습니다.')
                 raise Exception
 
-            except discord.errors.HTTPException:
-                await message.channel.send('알 수 없는 오류가 발생했습니다')
-                raise Exception
+            # except discord.errors.HTTPException:
+            #     await message.channel.send('알 수 없는 오류가 발생했습니다')
+            #     raise Exception
         else:
             await message.channel.send("1개 이상의 메시지만 삭제할 수 있습니다!")
         #else:
@@ -53,7 +54,7 @@ async def on_message(message):
 
 
 
-    
+
 def register(g_content_fun, g_startswith_fun):
     print('register : ', __name__)
 
