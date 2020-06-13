@@ -29,7 +29,7 @@ async def on_message(message):
                 client.get_all_channels()
                 # async for message in message.channel.history(limit=den):
                 #     await message.delete()
-                message.channel.purge(limit=den)
+                await message.channel.purge(limit=den)
 
                 # async for m in client.logs_from(message.channel, limit=den + 1):
                 #     await client.delete_message(m)
