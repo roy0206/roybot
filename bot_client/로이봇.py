@@ -33,7 +33,8 @@ async def on_message(message):
 12.'!번역 (원하는 단어)' 로 한영 번역 가능
 13.'!삭제 (숫자)' 로 메세지 삭제 가능
 14.'!내정보'로 내정보와 프사 확인 가능
-15.'!설명'으로 설명서 확인 가능""", color=0xff0000)
+15.'!설명'으로 설명서 확인 가능
+16.'업타임'으로 켜진 시간 확인 가능""", color=0xff0000)
         await message.channel.send(embed=embed)
 
 

@@ -12,7 +12,6 @@ import sys
 import json
 import asyncio
 import os
-import datetime
 from pytz import timezone, utc
 
 async def on_message(message):

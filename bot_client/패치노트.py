@@ -52,7 +52,9 @@ async def on_message(message):
          
 1.4.1버전:버그 픽스 및 업타임 추가
 
-1.4.2버전:삭제 버그 픽스""", color=0x00ff00)
+1.4.2버전:삭제 버그 픽스
+
+1.5.0버전:축구 기능 추가""", color=0x00ff00)
         await message.channel.send(embed=embed)
 
 
