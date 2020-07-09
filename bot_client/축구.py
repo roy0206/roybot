@@ -24,25 +24,25 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if message.content.startswith("드리블1"):
-        await message.channel.send(random.choice(["화려한 드리블!! 모두 재치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
+        await message.channel.send(random.choice(["화려한 드리블!! 모두 제치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
     if message.content.startswith("드리블2"):
-        await message.channel.send(random.choice(["화려한 드리블!! 모두 재치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.!", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!" "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
+        await message.channel.send(random.choice(["화려한 드리블!! 모두 제치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.!", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!" "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
     if message.content.startswith("드리블3"):
-        await message.channel.send(random.choice(["화려한 드리블!! 모두 재치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
+        await message.channel.send(random.choice(["화려한 드리블!! 모두 제치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
     if message.content.startswith("드리블4"):
-        await message.channel.send(random.choice(["화려한 드리블!! 모두 재치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
+        await message.channel.send(random.choice(["화려한 드리블!! 모두 제치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
     if message.content.startswith("드리블5"):
-        await message.channel.send(random.choice(["화려한 드리블!! 모두 재치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "안정적인 드리블 후 슈팅!", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
+        await message.channel.send(random.choice(["화려한 드리블!! 모두 제치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "안정적인 드리블 후 슈팅!", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
     if message.content.startswith("드리블6"):
-        await message.channel.send(random.choice(["화려한 드리블!! 모두 재치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "안정적인 드리블 후 슈팅!", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
+        await message.channel.send(random.choice(["화려한 드리블!! 모두 제치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "안정적인 드리블 후 슈팅!", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
     if message.content.startswith("드리블7"):
-        await message.channel.send(random.choice(["화려한 드리블!! 모두 재치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "안정적인 드리블 후 슈팅!", "엄청난 돌파력!! 전부 제치고 강슛!", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
+        await message.channel.send(random.choice(["화려한 드리블!! 모두 제치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "안정적인 드리블 후 슈팅!", "엄청난 돌파력!! 전부 제치고 강슛!", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
     if message.content.startswith("드리블8"):
-        await message.channel.send(random.choice(["화려한 드리블!! 모두 재치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "안정적인 드리블 후 슈팅!", "엄청난 돌파력!! 전부 제치고 강슛!", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
+        await message.channel.send(random.choice(["화려한 드리블!! 모두 제치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "안정적인 드리블 후 슈팅!", "엄청난 돌파력!! 전부 제치고 강슛!", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
     if message.content.startswith("드리블9"):
-        await message.channel.send(random.choice(["화려한 드리블!! 모두 재치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "안정적인 드리블 후 슈팅!", "엄청난 돌파력!! 전부 제치고 강슛!", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
+        await message.channel.send(random.choice(["화려한 드리블!! 모두 제치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "안정적인 드리블 후 슈팅!", "엄청난 돌파력!! 전부 제치고 강슛!", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
     if message.content.startswith("드리블10"):
-        await message.channel.send(random.choice(["화려한 드리블!! 모두 재치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "안정적인 드리블 후 슈팅!", "엄청난 돌파력!! 전부 제치고 강슛!", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
+        await message.channel.send(random.choice(["화려한 드리블!! 모두 제치고 바로 슛!", "무난한 드리블 그리고 패스.", "드리블이 걸렸지만 라인 밖으로 나갑니다!! 드로잉!!", "빠른 드리블 후 패스합니다.", "오오!! 빠르게 달려나간뒤 패스", "안정적인 드리블 후 슈팅!", "엄청난 돌파력!! 전부 제치고 강슛!", "아 아쉽게 막힙니다. 상대 선수가 드리블 합니다!!", "아 막힙니다... 상대선수의 패스!", "아 수비수에 걸리네요. 상대의 슈팅찬스입니다!!", "공이 흘렀네요.. 상대의 드로잉!"]))
 
     if message.content.startswith("패스1"):
         await message.channel.send(random.choice(["패스 미스를 합니다. 상대편이 돌파해요!!", "패스 방향이 이상하네요... 상대의 드로잉", "패스가 막혔어요.. 상대의 패스", "장거리 패스 시도하지만 실패합니다. 상대의 패스!", "연속패스 합니다", "패스후 빠르게 돌파!", "장거리 패스! 안정적으로 받고 패스!", "완벽한 패스입니다! 슈팅기회!"]))
@@ -148,7 +148,7 @@ async def on_message(message):
         if randomNum==8:
             await message.channel.send(embed=discord.Embed(title="수비수가 받아서 패스합니다!", color=discord.Color.blue()))
         if randomNum==9:
-            await message.channel.send(embed=discord.Embed(title="골입니다!!", color=discord.Color.blue()))
+            await message.channel.send(embed=discord.Embed(title=".", color=discord.Color.blue()))
 
     if message.content.startswith('슈팅2'):
         randomNum = random.randrange(1, 10)
@@ -171,10 +171,72 @@ async def on_message(message):
         if randomNum==9:
             await message.channel.send(embed=discord.Embed(title="화려한 골입니다!!", color=discord.Color.blue()))
         if randomNum==10:
-            await message.channel.send(embed=discord.Embed(title="골입니다!!", color=discord.Color.blue()))
+            await message.channel.send(embed=discord.Embed(title=".", color=discord.Color.blue()))
 
     if message.content.startswith('슈팅3'):
-        randomNum = random.randrange(1, 11)
+        randomNum = random.randrange(1, 12)
+        if randomNum==1:
+            await message.channel.send(embed=discord.Embed(title="아슬아슬하게 들어갔군요", color=discord.Color.blue()))
+        if randomNum==2:
+            await message.channel.send(embed=discord.Embed(title="강슛입니다! 골!!!", color=discord.Color.blue()))
+        if randomNum==3:
+            await message.channel.send(embed=discord.Embed(title="장거리 슛! 아아아 들어갑니다!!!", color=discord.Color.blue()))
+        if randomNum==4:
+            await message.channel.send(embed=discord.Embed(title="아 골대맞고 나갑니다.. 골킥!", color=discord.Color.blue()))
+        if randomNum==5:
+            await message.channel.send(embed=discord.Embed(title="아 수비수 발에 막힙니다!! 상대선수가 치고 나가요!", color=discord.Color.blue()))
+        if randomNum==6:
+            await message.channel.send(embed=discord.Embed(title="골키퍼의 선방!! 코너킥입니다!", color=discord.Color.blue()))
+        if randomNum==7:
+            await message.channel.send(embed=discord.Embed(title="아.... 대기권돌파슛! 골킥입니다.", color=discord.Color.blue()))
+        if randomNum==8:
+            await message.channel.send(embed=discord.Embed(title="수비수가 받아서 패스합니다!", color=discord.Color.blue()))
+        if randomNum==9:
+            await message.channel.send(embed=discord.Embed(title="화려한 골입니다!!", color=discord.Color.blue()))
+        if randomNum==10:
+            await message.channel.send(embed=discord.Embed(title="골대 맞고 튀어나옵니다!! 다시 슈팅!", color=discord.Color.blue()))
+        if randomNum==11:
+            await message.channel.send(embed=discord.Embed(title="키퍼와 1대1 칩슛으로 넣어버립니다!!", color=discord.Color.blue()))
+        if randomNum==12:
+            await message.channel.send(embed=discord.Embed(title=".", color=discord.Color.blue()))
+
+    if message.content.startswith('슈팅4'):
+        randomNum = random.randrange(1, 16)
+        if randomNum==1:
+            await message.channel.send(embed=discord.Embed(title="가랭이 사이로 골을 넣습니다!!", color=discord.Color.blue()))
+        if randomNum==2:
+            await message.channel.send(embed=discord.Embed(title="강슛입니다! 골!!!", color=discord.Color.blue()))
+        if randomNum==3:
+            await message.channel.send(embed=discord.Embed(title="장거리 슛! 아아아 들어갑니다!!!", color=discord.Color.blue()))
+        if randomNum==4:
+            await message.channel.send(embed=discord.Embed(title="아 골대맞고 나갑니다.. 골킥!", color=discord.Color.blue()))
+        if randomNum==5:
+            await message.channel.send(embed=discord.Embed(title="아 수비수 발에 막힙니다!! 상대선수가 치고 나가요!", color=discord.Color.blue()))
+        if randomNum==6:
+            await message.channel.send(embed=discord.Embed(title="골키퍼가 막습니다!! 코너킥!", color=discord.Color.blue()))
+        if randomNum==7:
+            await message.channel.send(embed=discord.Embed(title="아.... 대기권돌파슛! 골킥입니다.", color=discord.Color.blue()))
+        if randomNum==8:
+            await message.channel.send(embed=discord.Embed(title="수비수가 받아서 패스합니다!", color=discord.Color.blue()))
+        if randomNum==9:
+            await message.channel.send(embed=discord.Embed(title="화려한 골입니다!!", color=discord.Color.blue()))
+        if randomNum==10:
+            await message.channel.send(embed=discord.Embed(title="골대맞고 튕겨나온 볼을 다시 슈팅!", color=discord.Color.blue()))
+        if randomNum==11:
+            await message.channel.send(embed=discord.Embed(title="무회전슛! 골입니다!!", color=discord.Color.blue()))
+        if randomNum==12:
+            await message.channel.send(embed=discord.Embed(title="이런 놀라운 골은 처음 봅니다!!", color=discord.Color.blue()))
+        if randomNum==13:
+            await message.channel.send(embed=discord.Embed(title="슛! 아... 너무 높았습니다!", color=discord.Color.blue()))
+        if randomNum==14:
+            await message.channel.send(embed=discord.Embed(title="새상을 놀라게 하는 슛입니다!", color=discord.Color.blue()))
+        if randomNum==15:
+            await message.channel.send(embed=discord.Embed(title="가위차기?! 골입니다!! 역대급 명장면이네요!", color=discord.Color.blue()))
+        if randomNum==16:
+            await message.channel.send(embed=discord.Embed(title=".", color=discord.Color.blue()))
+
+    if message.content.startswith('슈팅5'):
+        randomNum = random.randrange(1, 14)
         if randomNum==1:
             await message.channel.send(embed=discord.Embed(title="간당간당하게 들어갔군요", color=discord.Color.blue()))
         if randomNum==2:
@@ -196,7 +258,9 @@ async def on_message(message):
         if randomNum==10:
             await message.channel.send(embed=discord.Embed(title="상대편의 파울! 프리킥입니다!", color=discord.Color.blue()))
         if randomNum==11:
-            await message.channel.send(embed=discord.Embed(title="골입니다!!", color=discord.Color.blue()))
+            await message.channel.send(embed=discord.Embed(title="무회전슛! 골입니다!!", color=discord.Color.blue()))
+        if randomNum==12:
+            await message.channel.send(embed=discord.Embed(title=".", color=discord.Color.blue()))
 
 
 def register(g_content_fun, g_startswith_fun):
@@ -205,7 +269,7 @@ def register(g_content_fun, g_startswith_fun):
     # message.content == "key" 로 비교할 key 등록
     content_key = []
     # message.content.startswith("key") 로 비교할 key 등록
-    startswith_key = ["!축구", "!경기시작", "드리블1", "드리블2", "드리블3", "드리블4", "드리블5", "드리블6", "드리블7", "드리블8", "드리블9", "드리블10", "패스1", "패스2", "패스3", "패스4", "패스5", "패스6", "패스7", "패스8", "패스9", "패스10", "드로잉1", "드로잉2", "드로잉3", "드로잉4", "드로잉5", "드로잉6", "드로잉7", "드로잉8", "드로잉9", "드로잉10", "코너킥1", "코너킥2", "코너킥3", "코너킥4", "코너킥5", "코너킥6", "코너킥7", "코너킥8", "코너킥9", "코너킥10", "골킥1", "슈팅1", "슈팅2"]
+    startswith_key = ["!축구", "!경기시작", "드리블1", "드리블2", "드리블3", "드리블4", "드리블5", "드리블6", "드리블7", "드리블8", "드리블9", "드리블10", "패스1", "패스2", "패스3", "패스4", "패스5", "패스6", "패스7", "패스8", "패스9", "패스10", "드로잉1", "드로잉2", "드로잉3", "드로잉4", "드로잉5", "드로잉6", "드로잉7", "드로잉8", "드로잉9", "드로잉10", "코너킥1", "코너킥2", "코너킥3", "코너킥4", "코너킥5", "코너킥6", "코너킥7", "코너킥8", "코너킥9", "코너킥10", "골킥1", "슈팅1", "슈팅2", "슈팅3", "슈팅4", "슈팅5"]
 
     # key 에 대응하는 함수 등록
     if len(content_key):
