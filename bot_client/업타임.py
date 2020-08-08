@@ -24,6 +24,7 @@ async def on_message(message):
 
 def register(g_content_fun, g_startswith_fun):
     print('register : ', __name__)
+    Uptime.uptimeset();
 
     # message.content == "key" 로 비교할 key 등록
     content_key = ["!업타임"]
