@@ -16,7 +16,6 @@ import asyncio
 
 
 async def on_message(message):
-
     if message.content.startswith('!영화순위'):
         # http://ticket2.movie.daum.net/movie/movieranklist.aspx 크롤링한 사이트
         i1 = 0  # 랭킹 string값

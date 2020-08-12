@@ -36,7 +36,7 @@ async def on_message(message):
     learn = message.content.split(" ")
     money = learn[1]
     money_int = int(money)
-    print(roy_money)
+    print(money_int)
 
 
     if money_int <= 100000:

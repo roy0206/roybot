@@ -16,11 +16,7 @@ import asyncio
 
 
 async def on_message(message):
-
-
-
     if message.content.startswith('!이미지'):
-
         Text = ""
         learn = message.content.split(" ")
         vrsize = len(learn)  # 배열크기

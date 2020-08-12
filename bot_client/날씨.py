@@ -18,7 +18,7 @@ import asyncio
 async def on_message(message):
 
     if message.content.startswith("!날씨"):
-        learn = message.content.split(" ")
+        learn = message.content.split(maxsplit=1)
         location = learn[1]
         enc_location = urllib.parse.quote(location+'날씨')
         hdr = {'User-Agent': 'Mozilla/5.0'}
