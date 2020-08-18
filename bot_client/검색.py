@@ -19,7 +19,7 @@ async def on_message(message):
 
     if message.content.startswith('!검색'):
         Text = ""
-        learn = message.content.split(" ")
+        learn = message.content.split(maxsplit=1)
         vrsize = len(learn)  # 배열크기
         vrsize = int(vrsize)
         for i in range(1, vrsize):  # 띄어쓰기 한 텍스트들 인식함

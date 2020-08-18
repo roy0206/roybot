@@ -36,7 +36,7 @@ async def on_message(message):
 15.'!설명'으로 설명서 확인 가능
 16.'업타임'으로 켜진 시간 확인 가능""", color=0xff0000)
         await message.author.send(embed=embed)
-        await message.channel.send("DM으로 도움말을 전송했어요!")
+        await message.channel.send(f"{message.author}님의 개인메시지로 전송했어요!")
 
     if message.content == "!기능전체":
         embed = discord.Embed(title="로이봇 튜토리얼", description="""로이봇의 튜토리얼입니다.
