@@ -31,7 +31,8 @@ async def on_message(message):
         html = urllib.request.urlopen(req)
         bsObj = bs4.BeautifulSoup(html, "html.parser")
         moviechartBase = bsObj.find('div', {'class': 'main_detail'})
-        moviechart1 = moviechartBase.find('ul', {'class': 'list_boxthumb'})
+        moviechart1 = bsObj.find('ul', {'class': 'list_boxthumb'})
+        print(moviechart1)
         moviechart2 = moviechart1.find_all('li')
 
         for i in range(0, 20):
