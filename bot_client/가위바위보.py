@@ -30,7 +30,7 @@ async def on_message(message):
         if r == '바위':
             await message.channel.send("봇의 선택:" + r + "\n비겼습니다.")
         elif r == '보':
-            await message.channel.send("봇의 선택:" + r + "\n졌습니다.")
+            await message.channel.send("봇의 선택:" + r + "\n졌습니다. 아쉬워")
         elif r == '가위':
             await message.channel.send("봇의 선택:" + r + "\n이겼습니다.")
 
