@@ -32,7 +32,7 @@ async def on_message(message):
         elif r == '보':
             await message.channel.send("봇의 선택:" + r + "\n졌습니다. 아쉬워")
         elif r == '가위':
-            await message.channel.send("봇의 선택:" + r + "\n이겼습니다.")
+            await message.channel.send("봇의 선택:" + r + "\n이겼습니다. !!!!!!!!!")
 
     elif message.content==('!보'):
         r = random.choice(s)
