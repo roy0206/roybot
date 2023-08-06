@@ -15,6 +15,8 @@ import asyncio
 
 async def on_message(message):
 
+    message.channel.send("가위바위보") 
+
     s = ['가위','바위','보']
     if message.content==('!가위'):
         r = random.choice(s)
